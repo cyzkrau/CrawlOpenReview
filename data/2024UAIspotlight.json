@@ -1,0 +1,204 @@
+[
+    {
+        "title": "Walking the Values in Bayesian Inverse Reinforcement Learning",
+        "authorids": [
+            "~Ondrej_Bajgar1",
+            "~Alessandro_Abate1",
+            "~Konstantinos_Gatsis1",
+            "~Michael_A_Osborne1"
+        ],
+        "keywords": [
+            "Bayesian methods",
+            "inverse reinforcement learning",
+            "imitation learning"
+        ],
+        "abstract": "The goal of Bayesian inverse reinforcement learning (IRL) is recovering a posterior distribution over reward functions using a set of demonstrations from an expert optimizing for a reward unknown to the learner. The resulting posterior over rewards can then be used to synthesize an apprentice policy that performs well on the same or a similar task.\nA key challenge in Bayesian IRL is bridging the computational gap between the hypothesis space of possible rewards and the likelihood, often defined in terms of Q values: vanilla Bayesian IRL needs to solve the costly forward planning problem -- going from rewards to the Q values -- at every step of the algorithm, which may need to be done thousands of times. We propose to solve this by a simple change: instead of focusing on primarily sampling in the space of rewards, we can focus on primarily working in the space of Q-values, since the computation required to go from Q-values to reward is radically cheaper. Furthermore, this reversion of the computation makes it easy to compute the gradient allowing efficient sampling using Hamiltonian Monte Carlo. We propose ValueWalk -- a new Markov chain Monte Carlo method based on this insight -- and illustrate its advantages on several tasks.",
+        "_bibtex": "@inproceedings{\nbajgar2024walking,\ntitle={Walking the Values in Bayesian Inverse Reinforcement Learning},\nauthor={Ondrej Bajgar and Alessandro Abate and Konstantinos Gatsis and Michael A Osborne},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=48SI6DOqUH}\n}"
+    },
+    {
+        "title": "BEARS Make Neuro-Symbolic Models Aware of their Reasoning Shortcuts",
+        "authorids": [
+            "~Emanuele_Marconato1",
+            "~Samuele_Bortolotti1",
+            "~Emile_van_Krieken1",
+            "~Antonio_Vergari3",
+            "~Andrea_Passerini2",
+            "~Stefano_Teso1"
+        ],
+        "keywords": [
+            "neuro-symbolic AI",
+            "uncertainty",
+            "reasoning shortcuts",
+            "calibration",
+            "probabilistic reasoning",
+            "concept-based models"
+        ],
+        "abstract": "Neuro-Symbolic (NeSy) predictors that conform to symbolic knowledge \u2013 encoding, e.g., safety constraints \u2013 can be affected by Reasoning Shortcuts (RSs): They learn concepts consistent with the symbolic knowledge by exploiting unintended semantics. RSs compromise reliability and generalization and, as we show in this paper, they are linked to NeSy models being overconfident about the predicted concepts. Unfortunately, the only trustworthy mitigation strategy requires collecting costly dense supervision over the concepts. Rather than attempting to avoid RSs altogether, we propose to ensure NeSy models are aware of the semantic ambiguity of the concepts they learn, thus enabling their users to identify and distrust low-quality concepts. Starting from three simple desiderata, we derive bears (BE Aware of Reasoning Shortcuts), an ensembling technique that calibrates the model\u2019s concept-level confidence without compromising prediction accuracy, thus encouraging NeSy architectures to be uncertain about concepts affected by RSs. We show empirically that bears improves RS-awareness of several state-of-the-art NeSy models, and also facilitates acquiring informative dense annotations for mitigation purposes.",
+        "_bibtex": "@inproceedings{\nmarconato2024bears,\ntitle={{BEARS} Make Neuro-Symbolic Models Aware of their Reasoning Shortcuts},\nauthor={Emanuele Marconato and Samuele Bortolotti and Emile van Krieken and Antonio Vergari and Andrea Passerini and Stefano Teso},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=pDcM1k7mgZ}\n}"
+    },
+    {
+        "title": "Hidden Population Estimation with Indirect Inference and Auxiliary Information",
+        "authorids": [
+            "~Justin_David_Naggar_Weltz1",
+            "~Eric_Laber1",
+            "~Alexander_Volfovsky1"
+        ],
+        "keywords": [
+            "Respondent Driven Sampling",
+            "Indirect Inference",
+            "Networks"
+        ],
+        "abstract": "Many populations defined by illegal or stigmatized behavior are difficult to sample using conventional survey methodology. Respondent Driven Sampling (RDS) is a participant referral process frequently employed in this context to collect information. This sampling methodology can be modeled as a stochastic process that explores the graph of a social network, generating a partially observed subgraph between study participants. The methods currently used to impute the missing edges in this subgraph exhibit biased downstream estimation. We leverage auxiliary participant information and concepts from indirect inference to ameliorate these issues and improve estimation of the hidden population size. These advances result in smaller bias and higher precision in the estimation of the study participant arrival rate, the sample subgraph, and the population size. Lastly, we use our method to estimate the number of People Who Inject Drugs (PWID) in the Kohtla-Jarve region of Estonia.",
+        "_bibtex": "@inproceedings{\nweltz2024hidden,\ntitle={Hidden Population Estimation with Indirect Inference and Auxiliary Information},\nauthor={Justin David Naggar Weltz and Eric Laber and Alexander Volfovsky},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=iAEGXuXuyE}\n}"
+    },
+    {
+        "title": "Common Event Tethering to Improve Prediction of Rare Clinical Events",
+        "authorids": [
+            "~Quinn_Lanners1",
+            "~Qin_Weng1",
+            "~Marie-Louise_Meng1",
+            "~Matthew_M._Engelhard1"
+        ],
+        "keywords": [
+            "rare event modeling",
+            "multi-label learning",
+            "imbalanced data",
+            "regularization",
+            "shrinkage method",
+            "representation learning",
+            "electronic health record"
+        ],
+        "abstract": "Learning to predict rare medical events is difficult due to the inherent lack of signal in highly imbalanced datasets. Yet, oftentimes we also have access to surrogate or related outcomes that we believe share etiology or underlying risk factors with the event of interest. In this work, we propose the use of two variants of a well-known approach, regularized multi-label learning (MLL), that we hypothesize are uniquely suited to leverage this similarity and improve model performance in rare event settings. Whereas most analyses of MLL emphasize improved performance across all event types, our analyses quantify benefits to rare event prediction offered by our approach when a more common, related event is available to enhance learning. We begin by deriving asymptotic properties and providing theoretical insight into the convergence rates of our proposed estimators. We then provide simulation results highlighting how characteristics of the data generating process, including the event similarity and event rate, affect our proposed models' performance. We conclude by showing real-world benefit of our approach in two clinical settings: prediction of rare cardiovascular morbidities in the setting of preeclampsia; and early prediction of autism from the electronic health record.",
+        "_bibtex": "@inproceedings{\nlanners2024common,\ntitle={Common Event Tethering to Improve Prediction of Rare Clinical Events},\nauthor={Quinn Lanners and Qin Weng and Marie-Louise Meng and Matthew M. Engelhard},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=wvrPP5lCh9}\n}"
+    },
+    {
+        "title": "Extremely Greedy Equivalence Search",
+        "authorids": [
+            "~Achille_Nazaret1",
+            "~David_Blei2"
+        ],
+        "keywords": [
+            "directed graphical model",
+            "causal discovery",
+            "Markov equivalence class",
+            "greedy equivalence search"
+        ],
+        "abstract": "The goal of causal discovery is to learn a directed acyclic graph from data. \nOne of the most well-known methods for this problem is Greedy Equivalence\nSearch (GES). \nGES searches for the graph by incrementally and greedily adding or removing edges\nto maximize a model selection criterion. \nIt has strong theoretical guarantees on infinite data but can fail in practice on\nfinite data. \nIn this paper, we first identify some of the causes of GES's failure, finding that it \ncan get blocked in local optima, especially in denser graphs. \nWe then propose eXtremely Greedy Equivalent Search (XGES), which involves a new\nheuristic to improve the search strategy of GES while retaining its theoretical\nguarantees. \nIn particular, XGES favors deleting edges early in the search over inserting\nedges, which reduces the possibility of the search ending in local optima. \nA further contribution of this work is an efficient algorithmic\nformulation of XGES (and GES). \nWe benchmark XGES on simulated datasets with known ground truth. \nWe find that XGES consistently outperforms GES in recovering the correct graphs, and \nit is 10 times faster.",
+        "_bibtex": "@inproceedings{\nnazaret2024extremely,\ntitle={Extremely Greedy Equivalence Search},\nauthor={Achille Nazaret and David Blei},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=2gIMX9UxRN}\n}"
+    },
+    {
+        "title": "The Real Deal Behind the Artificial Appeal: Inferential Utility of Tabular Synthetic Data",
+        "authorids": [
+            "~Alexander_Decruyenaere1",
+            "~Heidelinde_Dehaene1",
+            "~Paloma_Rabaey1",
+            "~Christiaan_Polet1",
+            "~Johan_Decruyenaere1",
+            "~Stijn_Vansteelandt1",
+            "~Thomas_Demeester1"
+        ],
+        "keywords": [
+            "synthetic data",
+            "inferential utility",
+            "generative model"
+        ],
+        "abstract": "Recent advances in generative models facilitate the creation of synthetic data to be made available for research in privacy-sensitive contexts. However, the analysis of synthetic data raises a unique set of methodological challenges. In this work, we highlight the importance of inferential utility and provide empirical evidence against naive inference from synthetic data, whereby synthetic data are treated as if they were actually observed. Before publishing synthetic data, it is essential to develop statistical inference tools for such data. By means of a simulation study, we show that the rate of false-positive findings (type 1 error) will be unacceptably high, even when the estimates are unbiased. Despite the use of a previously proposed correction factor, this problem persists for deep generative models, in part due to slower convergence of estimators and resulting underestimation of the true standard error. We further demonstrate our findings through a case study.",
+        "_bibtex": "@inproceedings{\ndecruyenaere2024the,\ntitle={The Real Deal Behind the Artificial Appeal: Inferential Utility of Tabular Synthetic Data},\nauthor={Alexander Decruyenaere and Heidelinde Dehaene and Paloma Rabaey and Christiaan Polet and Johan Decruyenaere and Stijn Vansteelandt and Thomas Demeester},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=OR9bNsVPWb}\n}"
+    },
+    {
+        "title": "Faster Perfect Sampling of Bayesian Network Structures",
+        "authorids": [
+            "~Juha_Harviainen1",
+            "~Mikko_Koivisto1"
+        ],
+        "keywords": [
+            "Bayesian networks",
+            "perfect sampling",
+            "rejection sampling",
+            "structure learning"
+        ],
+        "abstract": "Bayesian inference of a Bayesian network structure amounts to averaging over directed acyclic graphs (DAGs) on a given set of $n$ variables, each DAG weighted by its posterior probability. In practice, save some special inference tasks, one averages over a sample of DAGs generated perfectly or approximately from the posterior. For the hard problem of perfect sampling, we give an algorithm that runs in $O(2.829^n)$ expected time, getting below $O(3^n)$ for the first time. Our algorithm reduces the problem into two smaller sampling problems whose outputs are combined; followed by a simple rejection step, perfect samples are obtained. Subsequent samples can be generated considerably faster. Empirically, we observe speedups of several orders of magnitude over the state of the art.",
+        "_bibtex": "@inproceedings{\nharviainen2024faster,\ntitle={Faster Perfect Sampling of Bayesian Network Structures},\nauthor={Juha Harviainen and Mikko Koivisto},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=eq2rjvKbaG}\n}"
+    },
+    {
+        "title": "Analysis of Bootstrap and Subsampling in High-dimensional Regularized Regression",
+        "authorids": [
+            "~Lucas_Clart\u00e91",
+            "~Adrien_Vandenbroucque1",
+            "~Guillaume_Dalle1",
+            "~Bruno_Loureiro1",
+            "~Florent_Krzakala1",
+            "~Lenka_Zdeborova1"
+        ],
+        "keywords": [
+            "high-dimension",
+            "bootstrap",
+            "convex problems",
+            "statistical physics",
+            "uncertainty",
+            "approximate message passing",
+            "high-dimensional statistics"
+        ],
+        "abstract": "We investigate popular resampling methods for estimating the uncertainty of statistical models, such as subsampling, bootstrap and the jackknife, and their performance in high-dimensional supervised regression tasks. We provide a tight asymptotic description of the biases and variances estimated by these methods in the context of generalized linear models, such as ridge and logistic regression, taking the limit where the number of samples $n$ and dimension $d$ of the covariates grow at a comparable rate: $\\alpha=n/d$ fixed. Our findings are three-fold: i) resampling methods are fraught with problems in high dimensions and exhibit the double-descent-like behavior typical of these situations; ii) only when $\\alpha$ is large enough do they provide consistent and reliable error estimations (we give convergence rates); iii) in the over-parametrized regime $\\alpha<1$ relevant to modern machine learning practice, their predictions are not consistent, even with optimal regularization.",
+        "_bibtex": "@inproceedings{\nclart{\\'e}2024analysis,\ntitle={Analysis of Bootstrap and Subsampling in High-dimensional Regularized Regression},\nauthor={Lucas Clart{\\'e} and Adrien Vandenbroucque and Guillaume Dalle and Bruno Loureiro and Florent Krzakala and Lenka Zdeborova},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=yZaXk3OxVS}\n}"
+    },
+    {
+        "title": "Convergence Behavior of an Adversarial Weak Supervision Method",
+        "authorids": [
+            "~Steven_An1",
+            "~Sanjoy_Dasgupta3"
+        ],
+        "keywords": [
+            "weak supervision",
+            "adversarial weak supervision",
+            "balsubramani_freund",
+            "dawid_skene",
+            "convergence",
+            "consistency"
+        ],
+        "abstract": "Labeling data via rules-of-thumb and minimal label supervision is central to Weak Supervision, a paradigm subsuming subareas of machine learning such as crowdsourced learning and semi-supervised ensemble learning.  By using this labeled data to train modern machine learning methods, the cost of acquiring large amounts of hand labeled data can be ameliorated.  Approaches to combining the rules-of-thumb falls into two camps, reflecting different ideologies of statistical estimation.  The most common approach, exemplified by the Dawid-Skene model, is based on probabilistic modeling.  The other, developed in the work of Balsubramani-Freund and others, is adversarial and game-theoretic.  We provide a variety of statistical results for the adversarial approach under log-loss: we characterize the form of the solution, relate it to logistic regression, demonstrate consistency, and give rates of convergence.  On the other hand, we find that probabilistic approaches for the same model class can fail to be consistent.  Experimental results are provided to corroborate the theoretical results.",
+        "_bibtex": "@inproceedings{\nan2024convergence,\ntitle={Convergence Behavior of an Adversarial Weak Supervision Method},\nauthor={Steven An and Sanjoy Dasgupta},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=q9TqTSk9cy}\n}"
+    },
+    {
+        "title": "Investigating the Impact of Model Width and Density on Generalization in Presence of Label Noise",
+        "authorids": [
+            "~Yihao_Xue1",
+            "~Kyle_Whitecross1",
+            "~Baharan_Mirzasoleiman1"
+        ],
+        "keywords": [
+            "Generalization; Double Descent"
+        ],
+        "abstract": "Increasing the size of overparameterized neural networks has been a key in achieving state-of-the-art performance. This is captured by the double descent phenomenon, where the test loss follows a decreasing-increasing-decreasing pattern (or sometimes monotonically decreasing) as model width increases. However, the effect of label noise on the test loss curve has not been fully explored. In this work, we uncover an intriguing phenomenon where label noise leads to a \\textit{final ascent} in the originally observed double descent curve. Specifically, under a sufficiently large noise-to-sample-size ratio, optimal generalization is achieved at intermediate widths. Through theoretical analysis, we attribute this phenomenon to the shape transition of test loss variance induced by label noise. Furthermore, we extend the final ascent phenomenon to model density and provide the first theoretical characterization showing that reducing density by randomly dropping trainable parameters improves generalization under label noise. We also thoroughly examine the roles of regularization and sample size. Surprisingly, we find that larger $\\ell_2$ regularization and robust learning methods against label noise exacerbate the final ascent. We confirm the validity of our findings through extensive experiments on ReLu networks trained on MNIST, ResNets/ViT trained on CIFAR-10/100, and InceptionResNet-v2 trained on Stanford Cars with real-world noisy labels.",
+        "_bibtex": "@inproceedings{\nxue2024investigating,\ntitle={Investigating the Impact of Model Width and Density on Generalization in Presence of Label Noise},\nauthor={Yihao Xue and Kyle Whitecross and Baharan Mirzasoleiman},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=QXCRgDfrzS}\n}"
+    },
+    {
+        "title": "Approximate Bayesian Computation with Path Signatures",
+        "authorids": [
+            "~Joel_Dyer1",
+            "~Patrick_Cannon1",
+            "~Sebastian_M_Schmon1"
+        ],
+        "keywords": [
+            "approximate Bayesian computation",
+            "path signatures",
+            "time series"
+        ],
+        "abstract": "Simulation models often lack tractable likelihood functions, making likelihood-free inference methods indispensable. Approximate Bayesian computation generates likelihood-free posterior samples by comparing simulated and observed data through some distance measure, but existing approaches are often poorly suited to time series simulators, for example due to an independent and identically distributed data assumption. In this paper, we propose to use path signatures in approximate Bayesian computation to handle the sequential nature of time series. We provide theoretical guarantees on the resultant posteriors and demonstrate competitive Bayesian parameter inference for simulators generating univariate, multivariate, and irregularly spaced sequences of non-iid data.",
+        "_bibtex": "@inproceedings{\ndyer2024approximate,\ntitle={Approximate Bayesian Computation with Path Signatures},\nauthor={Joel Dyer and Patrick Cannon and Sebastian M Schmon},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=MsU6sKOcA4}\n}"
+    },
+    {
+        "title": "Graph Feedback Bandits with Similar Arms",
+        "authorids": [
+            "~Han_Qi3",
+            "~Guo_Fei1",
+            "~Li_Zhu7"
+        ],
+        "keywords": [
+            "online learning",
+            "bandit"
+        ],
+        "abstract": "In this paper, we study the stochastic multi-armed bandit problem with graph feedback. Motivated by the clinical trials and recommendation problem, we assume that two arms are connected if and only if they are  similar (i.e., their means are close enough). We establish a regret lower bound for this novel feedback structure and introduce two UCB-based algorithms: D-UCB with problem-independent regret upper bounds and C-UCB with problem-dependent upper bounds. Leveraging the similarity structure, we also consider the scenario  where the number of arms increases over time. Practical applications related to this scenario include Q\\&A platforms (Reddit, Stack Overflow, Quora) and product reviews in Amazon and Flipkart.  Answers (product reviews) continually appear on the website, and the goal is to display the best answers (product reviews) at the top. When the means of arms are independently generated from some distribution, we provide regret upper bounds for both algorithms  and discuss the sub-linearity of bounds in relation to the distribution of means. Finally, we conduct experiments to validate the theoretical results.",
+        "_bibtex": "@inproceedings{\nqi2024graph,\ntitle={Graph Feedback Bandits with Similar Arms},\nauthor={Han Qi and Guo Fei and Li Zhu},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=SkMf997R7t}\n}"
+    }
+]
