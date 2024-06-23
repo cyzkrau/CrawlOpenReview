@@ -27,7 +27,6 @@ def main(path, url, parameter):
             for key in ['title', 'authorids', 'keywords', 'abstract', '_bibtex']:
                 if key in item['content'].keys():
                     data[-1][key] = item['content'][key]['value']
-        break
     if data == []:
         print('failed')
     else:

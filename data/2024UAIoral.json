@@ -407,5 +407,51 @@
         ],
         "abstract": "We study the sample complexity of obtaining an $\\epsilon$-optimal policy in \\emph{Robust} discounted Markov Decision Processes (RMDPs), given only access to a generative model of the nominal kernel. This problem is widely studied in the non-robust case, and it is known that any planning approach applied to an empirical MDP estimated with $\\tilde{\\mathcal{O}}(\\frac{H^3  |S||A|}{\\epsilon^2})$ samples provides an $\\epsilon$-optimal policy, which is minimax optimal. Results in the robust case are much more scarce. For $sa$- (resp $s$-) rectangular uncertainty sets, until recently the best-known sample complexity was $\\tilde{\\mathcal{O}}(\\frac{H^4  |S|^2|A|}{\\epsilon^2})$ (resp. $\\tilde{\\mathcal{O}}(\\frac{H^4  | S |^2| A |^2}{\\epsilon^2})$), for specific algorithms and when the uncertainty set is based on the total variation (TV), the KL or the Chi-square divergences. In this paper, we consider uncertainty sets defined with an $L_p$-ball (recovering the TV case), and study the sample complexity of \\emph{any} planning algorithm (with high accuracy guarantee on the solution) applied to an empirical RMDP estimated using the generative model. In the general case, we prove a sample complexity of $\\tilde{\\mathcal{O}}(\\frac{H^4  | S || A |}{\\epsilon^2})$ for both the $sa$- and $s$-rectangular cases (improvements of $| S |$ and $| S || A |$ respectively). When the size of the uncertainty is small enough, we improve the sample complexity to $\\tilde{\\mathcal{O}}(\\frac{H^3 | S || A | }{\\epsilon^2})$, recovering the lower-bound for the non-robust case for the first time and a robust lower-bound. Finally, we also introduce simple and efficient algorithms for solving the studied $L_p$ robust MDPs.",
         "_bibtex": "@inproceedings{\nclavier2024towards,\ntitle={Towards Minimax Optimality of Model-based Robust Reinforcement Learning},\nauthor={Pierre Clavier and Erwan Le Pennec and Matthieu Geist},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=mcmMbWLkfQ}\n}"
+    },
+    {
+        "title": "Efficient Monte Carlo Tree Search via On-the-Fly State-Conditioned Action Abstraction",
+        "authorids": [
+            "~Yunhyeok_Kwak1",
+            "~Inwoo_Hwang1",
+            "~Dooyoung_Kim1",
+            "~Sanghack_Lee1",
+            "~Byoung-Tak_Zhang1"
+        ],
+        "keywords": [
+            "Monte Carlo tree search",
+            "Context-specific independence"
+        ],
+        "abstract": "Monte Carlo Tree Search (MCTS) has showcased its efficacy across a broad spectrum of decision-making problems. However, its performance often degrades under vast combinatorial action space, especially where an action is composed of multiple sub-actions. In this work, we propose an action abstraction based on the compositional structure between a state and sub-actions for improving the efficiency of MCTS under a factored action space. Our method learns a latent dynamics model with an auxiliary network that captures sub-actions relevant to the transition on the current state, which we call state-conditioned action abstraction. Notably, it infers such compositional relationships from high-dimensional observations without the known environment model. During the tree traversal, our method constructs the state-conditioned action abstraction for each node on-the-fly, reducing the search space by discarding the exploration of redundant sub-actions. Experimental results demonstrate the superior sample efficiency of our method compared to vanilla MuZero, which suffers from expansive action space.",
+        "_bibtex": "@inproceedings{\nkwak2024efficient,\ntitle={Efficient Monte Carlo Tree Search via On-the-Fly State-Conditioned Action Abstraction},\nauthor={Yunhyeok Kwak and Inwoo Hwang and Dooyoung Kim and Sanghack Lee and Byoung-Tak Zhang},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=UvDsWevxUI}\n}"
+    },
+    {
+        "title": "Inference in Probabilistic Answer Set Programs with Imprecise Probabilities via Optimization",
+        "authorids": [
+            "~Damiano_Azzolini1",
+            "~Fabrizio_Riguzzi1"
+        ],
+        "keywords": [
+            "probabilistic answer set programming",
+            "statistical relational artificial intelligence",
+            "imprecise probabilities",
+            "credal sets",
+            "algebraic model counting"
+        ],
+        "abstract": "Probabilistic answer set programming has recently been extended to manage imprecise probabilities by means of credal probabilistic facts and credal annotated disjunctions.\nThis increases the expressivity of the language but, at the same time, the cost of inference.\nIn this paper, we cast inference in probabilistic answer set programs with credal probabilistic facts and credal annotated disjunctions as a constrained nonlinear optimization problem where the function to optimize is obtained via knowledge compilation.\nEmpirical results on different datasets with multiple configurations shows the effectiveness of our approach.",
+        "_bibtex": "@inproceedings{\nazzolini2024inference,\ntitle={Inference in Probabilistic Answer Set Programs with Imprecise Probabilities via Optimization},\nauthor={Damiano Azzolini and Fabrizio Riguzzi},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=h5VFqO681Y}\n}"
+    },
+    {
+        "title": "Synthetic Principal Component Design: Fast Covariate Balancing with Synthetic Controls",
+        "authorids": [
+            "~Yiping_Lu1",
+            "~Jiajin_Li2",
+            "~Lexing_Ying1",
+            "~Jose_Blanchet1"
+        ],
+        "keywords": [
+            "Experiment Design"
+        ],
+        "abstract": "The optimal design of experiments typically involves solving an NP-hard combinatorial optimization problem. In this paper, we aim to develop a globally convergent and practically efficient optimization algorithm. Specifically, we consider a setting where the pre-treatment outcome data is available and the synthetic control estimator is invoked. The average treatment effect is estimated via the difference between the weighted average outcomes of the treated and control units, where the weights are learned from the observed data. {Under this setting, we surprisingly observed that the optimal experimental design problem could be reduced to a so-called \\textit{phase synchronization} problem.} We solve this problem via a normalized variant of the generalized power method with spectral initialization. On the theoretical side, we establish the first global optimality guarantee for experiment design when pre-treatment data is sampled from certain data-generating processes. Empirically, we conduct extensive experiments to demonstrate the effectiveness of our method on both the US Bureau of Labor Statistics and the Abadie-Diemond-Hainmueller California Smoking Data. In terms of the root mean square error, our algorithm surpasses the random design by a large margin.",
+        "_bibtex": "@inproceedings{\nlu2024synthetic,\ntitle={Synthetic Principal Component Design: Fast Covariate Balancing with Synthetic Controls},\nauthor={Yiping Lu and Jiajin Li and Lexing Ying and Jose Blanchet},\nbooktitle={The 40th Conference on Uncertainty in Artificial Intelligence},\nyear={2024},\nurl={https://openreview.net/forum?id=I8YtZqLjFc}\n}"
     }
 ]
