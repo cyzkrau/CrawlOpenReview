@@ -17,6 +17,9 @@ def main(path, url, parameter):
     for offset in range(10000):
         parameter['offset'] = 25 * offset
         html = json.loads(get_page_index(parameter, url))
+        with open(path, 'w') as f:
+            json.dump(html, f, indent=4)
+            
         if html['notes'] == []:
             break
         for item in html['notes']:
@@ -24,6 +27,7 @@ def main(path, url, parameter):
             for key in ['title', 'authorids', 'keywords', 'abstract', '_bibtex']:
                 if key in item['content'].keys():
                     data[-1][key] = item['content'][key]['value']
+        break
     if data == []:
         print('failed')
     else:
